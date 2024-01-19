@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biker Zone - Home</title>
+
+    <!-- tailwind css & Daisy UI cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font family cdn link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style css -->
+
+    <style>
+      :root {
+        background-color: white;
+        color: black;
+        color-scheme: light;
+      }
+
+      .poppins-font {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .bg-carousel {
+        border-radius: 5px;
+        background: rgba(231, 111, 81, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="poppins-font">
+        <div class="navbar justify-between max-w-6xl mx-auto">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-orange-400 rounded-box w-52"
+              >
+                <li class="mt-2"><a>Home</a></li>
+                <li class="mt-2"><a>News</a></li>
+                <li class="mt-2"><a>Blog</a></li>
+                <li class="mt-2"><a>Contact</a></li>
+              </ul>
+            </div>
+            <h2 class="text-2xl poppins-font">Biker Dhapa</h2>
+          </div>
+          <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li
+                class="hover:bg-black hover:text-white duration-500 ml-3 rounded-md"
+              >
+                <a>Home </a>
+              </li>
+              <li
+                class="hover:bg-black hover:text-white duration-500 ml-3 rounded-md"
+              >
+                <a>Shop</a>
+              </li>
+              <li
+                class="hover:bg-black hover:text-white duration-500 ml-3 rounded-md"
+              >
+                <a>News</a>
+              </li>
+              <li
+                class="hover:bg-black hover:text-white duration-500 ml-3 rounded-md"
+              >
+                <a>Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navber-start">
+            <a class="btn btn-error px-8 bg-[#E76F51] .poppins-font text-white"
+              >Login</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner curasel section start -->
+
+      <section class="mt-8 max-w-6xl mx-auto">
+        <div class="carousel w-full border bg-carousel py-4">
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="w-10/12 flex gap-5 mx-auto lg:items-center">
+              <div class="w-1/2">
+                <h1 class="lg:text-6xl poppins-font">
+                  Ride-on R15 V4 <br />
+                  with Smile
+                </h1>
+                <p class="py-4 text-gray-700">
+                  Amet minim mollit non deserunt ullamco <br />
+                  est sit aliqua dolor do amet sint. Velit officia consequat
+                  <br />
+                  dui s enim velit mollit.
+                </p>
+                <a
+                  class="btn btn-error px-8 bg-[#E76F51] .poppins-font text-white"
+                  >Purchase</a
+                >
+              </div>
+
+              <div class="w-1/2">
+                <img src="images/slider/bike1.png" class="w-full" />
+              </div>
+            </div>
+
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="text-2xl">❮</a>
+              <a href="#slide2" class="text-2xl">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="w-10/12 flex gap-5 mx-auto items-center">
+              <div class="w-1/2">
+                <h1 class="lg:text-6xl poppins-font">
+                  Ride-on R15 V4 <br />
+                  with Smile
+                </h1>
+                <p class="py-4 text-gray-700">
+                  Amet minim mollit non deserunt ullamco <br />
+                  est sit aliqua dolor do amet sint. Velit officia consequat
+                  <br />
+                  dui s enim velit mollit.
+                </p>
+                <a
+                  class="btn btn-error px-8 bg-[#E76F51] .poppins-font text-white"
+                  >Purchase</a
+                >
+              </div>
+
+              <div class="w-1/2">
+                <img src="images/slider/bike2.png" class="w-full" />
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="text-2xl">❮</a>
+              <a href="#slide3" class="text-2xl">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="w-10/12 lg:flex gap-5 mx-auto items-center">
+              <div class="w-1/2">
+                <h1 class="text-6xl poppins-font">
+                  Ride-on R15 V4 <br />
+                  with Smile
+                </h1>
+                <p class="py-4 text-gray-700">
+                  Amet minim mollit non deserunt ullamco <br />
+                  est sit aliqua dolor do amet sint. Velit officia consequat
+                  <br />
+                  dui s enim velit mollit.
+                </p>
+                <a
+                  class="btn btn-error px-8 bg-[#E76F51] .poppins-font text-white"
+                  >Purchase</a
+                >
+              </div>
+
+              <div class="w-1/2">
+                <img src="images/slider/bike3.png" class="w-full" />
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="text-2xl">❮</a>
+              <a href="#slide4" class="text-2xl">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <div class="w-10/12 lg:flex gap-5 mx-auto items-center">
+              <div class="w-1/2">
+                <h1 class="text-6xl poppins-font">
+                  Ride-on R15 V4 <br />
+                  with Smile
+                </h1>
+                <p class="py-4 text-gray-700">
+                  Amet minim mollit non deserunt ullamco <br />
+                  est sit aliqua dolor do amet sint. Velit officia consequat
+                  <br />
+                  dui s enim velit mollit.
+                </p>
+                <a
+                  class="btn btn-error px-8 bg-[#E76F51] .poppins-font text-white"
+                  >Purchase</a
+                >
+              </div>
+
+              <div class="w-1/2">
+                <img src="images/slider/bike4.png" class="w-full" />
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="text-2xl">❮</a>
+              <a href="#slide1" class="text-2xl">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>
